@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+/*ROUGH Begins (Scrolling background)*/
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 {
+  background-image: url("ember Watch logo.JPG");
+}
+.img2 {
+  background-image: url("forestfire3.jpg");
+}
+.img3 {
+  background-image: url("image 1.webp");
+}
+.img4 {
+  background-image: url("ember Watch logo.JPG");
+}
+.img5 {
+  background-image: url("forestfire3.jpg");
+}
+.img6 {
+  background-image: url("image 1.webp");
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+/*ROUGH ENDS (Scrolling background)*/
+
+/*Heading Text*/
+.jumbotron text-center {
+  background: rgba(250, 231, 214, 255);
+}
+
+/*Heading Text*/
+.text {
+  text-align: center;
+  left: 50%;
+
+  /*padding-left:20px
+  text-align: center;
+  */
+  vertical-align: top;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+/*Logo*/
+.logo-wrapper {
+  display: block;
+  float: left;
+
+  transform: translateX(30%);
+}
+.logo-wrapper .logo {
+  float: right;
+  display: block;
+}
+
+#map {
+  margin: auto;
+  width: 100%;
+  border: 3px solid gray;
+  padding: 10px;
+  height: 100%;
+  top: 0vw;
+  bottom: 5vw;
+}
+
+.marker {
+  background-image: url("/imgs/mapbox-icon.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* nav bar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  position: -webkit-sticky; /* Safari */
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: rgb(151, 142, 142);
+}
+
+.active {
+  background-color: #278655;
+}
+/* nav bar end */
+
+.map-wrapper {
+  float: bottom;
+  width: 100%;
+  height: 75%;
+}
+
+/* Slider things */
+
+.slider-text-wrapper {
+  text-align: center;
+}
+
+.slider-wrapper {
+  float: left;
+  width: 50%;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+.range {
+  background: #fae7d6;
+  height: 80px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 55px 0 45px;
+}
+
+.range .sliderVal {
+  position: relative;
+  width: 100%;
+}
+.range .sliderVal span {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+
+  color: white;
+  font-weight: 400;
+  top: -40px;
+  transform: translateX(-45%);
+  line-height: 55px;
+  z-index: 2;
+}
+
+.range .sliderVal span:after {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background: #278655;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 3px solid white;
+  z-index: -1;
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-left: 50%;
+}
+.range .field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.range .field input {
+  -webkit-appearance: none;
+  height: 3px;
+  width: 100%;
+  margin-left: 1px;
+  background: lightblue;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.range .field input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: yellow;
+  border-radius: 50%;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.range .field .val {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  color: blue;
+}
+.range .field .val.left {
+  left: -38px;
+}
+.range .field .val.right {
+  right: -43px;
+}
+
+/*Image comparssion thingy*/
+* {
+  box-sizing: border-box;
+}
+
+.img-comp-container {
+  position: relative;
+  height: auto; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196f3;
+  opacity: 0.7;
+  border-radius: 50%;
+}

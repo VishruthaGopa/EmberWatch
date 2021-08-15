@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember Watch - Map</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+
+</head>
+
+<body style="background: lightgray; height: 100vh;">
+    <ul class="navbar">
+        <li style="float: right">
+            <a href="/index.html">Ember Watch</a>
+        </li>
+        <li><a class="active" href="/map.html">Map</a></li>
+        <li><a href="/aboutUs.html">About Us</a></li>
+    </ul>
+
+
+
+    <div id=test class="jumbotron text-center" style="margin:0">
+        <p></p>
+    </div>
+
+    <div class="slider-text-wrapper">
+        <div id = "slider-text">
+            <h1>Range: 1985-1985</h1>
+        </div>
+    </div>
+    <div class="slider-wrapper">
+        <div class="range">
+            <div class="sliderVal">
+                <span id="firstVal">1985</span>
+            </div>
+            <div class="field">
+                <div class="val left">1950</div>
+                <input type="range" min="1950" max="2020" steps="1">
+                <div class="val right">2020</div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrapper">
+        <div class="range">
+            <div class="sliderVal">
+                <span id="secondVal">1985</span>
+            </div>
+            <div class="field">
+                <div class="val left">1950</div>
+                <input type="range" id="range2" min="1950" max="2020" steps="1">
+                <div class="val right">2020</div>
+            </div>
+        </div>
+    </div>
+    <div class="map-wrapper">
+        <div id="map"></div>
+    </div>
+    <script src="/scripts/map.js"></script>
+    <script src="/scripts/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+
+</html>

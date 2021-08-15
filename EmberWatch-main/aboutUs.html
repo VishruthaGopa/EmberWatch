@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmberWatch- AboutUS</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="background-color:#fae7d6">
+    <ul class="navbar">
+        <li style="float: right">
+            <a href="/index.html">EmberWatch</a>
+        </li>
+        <li><a href="/map.html">Map</a></li>
+        <li><a class="active" href="/aboutUs.html">About Us</a></li>
+    </ul>
+    <div class="jumbotron text-center bottom-fixed">
+        <h1>SET.Hacks() Submission</h1>
+        <p>by Alex Li, Lasya Erukulla, Lefan Hu and Vishrutha Gopa</p>
+        <i>
+            <p style = "color:green;font-family:verdana;">In recent years, the climate on our beloved Earth has started to change for the worse. 
+                Climate change has been shown to affect wildfires, due to the increased amount of droughts, and higher overall temperatures. 
+                Studies have shown that in the more recent years, fires have been getting larger, more severe, more frequent, and more dangerous.
+            </p>
+            <p style = "color:green;font-family:verdana;">This dilemma that the world has to face is what inspired us to create EmberWatch, an extremely helpful fire visualization tool capable of displaying wildfires that have happened all around Canada throughout the past century. 
+                Canada is one of the world's leading producers and exporters of wood, with the industry accounting for about $23.7 billion of the country's GDP in 2019. 
+                Due to the natural risk that comes with such an important industry, we felt that our project would be able to make an impact on local enterprises, and populations who live in high risk areas.
+            </p>
+        </i>
+    </div>
+
+    <script src="/scripts/scripts.js"> </script>
+
+    <!----Image Comaprison SLider -->
+   
+        <div class="img-comp-container">
+    
+            <div class="img-comp-img">
+            <img src="imgs/afterafter.jpg" width="1200" height="800"/>
+            <p>
+            <center>
+                The picture on the left depicts a lavish green forest, while the picture on the right depicts the aftermath of a forest fire.
+            </center>
+            </p>
+            
+            <p>
+                <center>
+                <b>    EmberWatch </b>gives people all over Canada the tools they need to better protect their forests.
+                </center>
+            </p>
+            </div>
+            
+            <div class="img-comp-img img-comp-overlay">
+            <img src="imgs/beforebefore.jpg" width="1200" height="800"/>
+            </div>
+        
+        </div>
+
+
+    <script>
+        initComparisons();
+    </script>
+
+</body>
+
+</html>
