@@ -1,5 +1,5 @@
 # EmberWatch
-EmberWatch is a DCP-powered interactive map program developed during the Set.hacks() hackathon, securing 1st Place Overall in Persona #2 category. This powerful and interactive tool raises awareness and tracks forest fires in Canada, providing users with an insightful map to explore information on known wildfires based on location and a specified time range.
+EmberWatch is a data visualization program developed during the **Set.hacks() hackathon**, where it secured **1st Place Overall in Persona #2 category**. This powerful and interactive tool raises awareness and tracks forest fires in Canada, providing users with an insightful map to explore information on known wildfires based on location and a specified time range.
 
 ## Features
 - **Interactive Map:** Explore a dynamic map that visualizes the information on wildfires throughout Canada.
